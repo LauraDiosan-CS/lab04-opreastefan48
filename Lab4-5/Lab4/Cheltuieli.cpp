@@ -74,12 +74,14 @@ ostream& operator<<(ostream& os, const Cheltuieli& c)
 
 istream& operator>>(istream& is, Cheltuieli& c)
 {
-	cout << "Dati numele: ";
+	cout << "Dati tipul cheltuielii: ";
 	char* tip = new char[10];
 	is >> tip;
-	cout << "Dati tipul cheltuielii: ";
+	cout << "Dati ziua: ";
 	int z, s;
 	cin >> z;
+	cout << "Dati suma platita: ";
+	cin >> s;
 	c.setTip(tip);
 	c.setSuma(s);
 	c.setZi(z);
